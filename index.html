@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>BIBLIOTECA VIRTUAL</h1>
+        <nav> 
+            <ul>
+            <li><a href="#catalogo">Catalogo de Livros</a></li>
+            <li><a href="#sugestoes">Sugestão de Livros</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main> 
+        <section id="catalogo"> 
+            <h2>Nosso Catálogo</h2>
+                <label for "busca">Pesquisar Livro:</label>
+                <input type ="search" id="busca" placeholder="Digite o titulo...">
+            <ul class="lista-livros">
+                <li><article class ="livro"><h3>Dom Casmurro</h3></article></li>
+                <li><article class ="livro"><h3>1984</h3></article></li>
+                <li><article class ="livro"><h3>O Pequeno Principe</h3></article></li>
+                <li><article class ="livro"><h3>Fahrenheit</h3></article></li>
+                <li><article class ="livro"><h3>Senhor dos Aneis</h3></article></li>
+                <li><article class ="livro"><h3>Jogos Vorazes</h3></article></li>
+                
+            </ul>
+        </section>
+        <section id="sugestoes"> 
+            <h2>Sugerir Novo Livro</h2>
+            <form action="#" method="post" id="form-sugestao"> 
+            <label for="nome">Seu Nome</label><input type="text" id="nome" name="nome">
+            <label for="titulo">Titulo da Obra</label><input type="text" id="titulo" name="titulo">
+            <button type="submit">Enviar Sugestão</button>
+            <p id="mensagem" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvimento Web Favip - Biblioteca Virtual<br>
+        <a href="#">Voltar ao Topo</a>
+        </p>
+    </footer>
+</body>
+</html>
